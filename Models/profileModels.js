@@ -50,18 +50,4 @@ const profileSchema = mongoose.Schema({
 
 const profileModel = mongoose.model("profileModel",profileSchema)
 
-/*(async function createProfile(){
-    let profile = {
-        firstName: "saket",
-        lastName:"jha",
-        email:"saketjha00@gmail.com",
-        mobileNo: '9709260818',
-        address:"sdfdfdfdfdfgfdfddfdf",
-        city:"sidrterta",
-        gender:"male"
-    }
-    let data =  await profileModel.create(profile)
-    console.log(data)
-})()*/
-
 module.exports = profileModel;
