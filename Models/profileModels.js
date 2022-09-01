@@ -30,7 +30,7 @@ const profileSchema = mongoose.Schema({
     },
     mobileNo:{
         type:String,
-        require:true,
+        require:false,
         unique:true,
         minlength:10,
     },

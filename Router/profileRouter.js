@@ -1,7 +1,9 @@
 const express = require("express")
 const profileRouter = express.Router()
-const { createPage, allPage, updatePage, deletePage } = require("../Controller/profileController")
+const { createPage, allPage, updatePage, deletePage,homePage } = require("../Controller/profileController")
 
+profileRouter.route("/")
+.get(homePage)
 
 profileRouter.route("/profile")
     .get(allPage)

@@ -90,3 +90,7 @@ module.exports.deletePage = async function deletePage(req, res) {
     }
 
 }
+
+module.exports.homePage = function homePage(req,res){
+    res.send("Hiii you are on the home page")
+}
