@@ -72,8 +72,8 @@ module.exports.updatePage = async function updatePage(req, res) {
 // To Delete Data 
 module.exports.deletePage = async function deletePage(req, res) {
     try {
-        const { email } = req.body.email
-        const profile = await profileModel.findOneAndDelete({ Email: email })
+        const  id  = req.body.id
+        const profile = await profileModel.findOneAndDelete({ _id : id })
         if (!profile) {
             res.json({
                 msg: "User Profile not found"
